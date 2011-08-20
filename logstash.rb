@@ -58,6 +58,7 @@ module MCollective
                          :persistent => persistent,
                          :key => "logstash.event.raw.#{Config.instance.identity}.#{audit_entry['@type']}")
 
+        bunny.stop
         
       end
 
